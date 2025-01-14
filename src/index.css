@@ -1,16 +1,25 @@
 body {
+  margin: 0;
   background-image: url(assets/Eagle.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh; /*for making our digit numbers middle of page*/
+  align-items: center;
 }
-.digitalclock-container {
+.digitalClock-container {
+  backdrop-filter: blur(2rem);
+  width: 100vw; /*for having blur for allover background*/
+  padding: 10px 0;
 }
 
 .clock {
-  color: white;
+  color: rgba(170, 198, 255, 0.901);
   font-weight: bold;
   font-size: 6rem;
   text-align: center;
+  font-family: monospace;
 }
